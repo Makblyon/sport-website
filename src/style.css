@@ -1,0 +1,51 @@
+.animated-bg {
+  animation-name: background;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes background {
+  0% {
+    background-image: url("./meeting 2.jpg");
+  }
+
+  100% {
+    background-image: url("./meeting 3.jpg");
+  }
+}
+
+.bg-meeting {
+  background-image: url("./meeting 2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-card:hover .img-text {
+  display: flex;
+  transition-duration: 1000ms;
+}
+
+option {
+  color: black;
+}
+
+.main-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-card::after {
+  content: "";
+  width: 110px;
+  height: 110px;
+  background-color: white;
+  position: absolute;
+  top: -78px;
+  right: -45px;
+  transform: rotate(308deg);
+}

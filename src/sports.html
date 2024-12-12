@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/fac9132716.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- flex  sm(640px and above), md (768px and above), lg (1024px and above), xl(1258px & above). 2xl(1440px & above) -->
+  <body class="w-full overflow-x-hidden">
+    <nav
+      class="w-full bg-secondary flex items-center justify-between px-12 py-2"
+    >
+      <div>
+        <img src="../images/logo.png" alt="" />
+      </div>
+
+      <div class="hidden lg:flex items-center justify-between">
+        <ul class="flex items-center gap-x-3">
+          <li><a href="" class="text-white text-2xl">jerseys</a></li>
+          <li><a href="" class="text-white text-2xl">training wear</a></li>
+          <li><a href="" class="text-white text-2xl">footwears</a></li>
+          <li><a href="" class="text-white text-2xl">accessories</a></li>
+        </ul>
+
+        <div class="ml-8 relative">
+          <input
+            class="bg-white rounded-full w-52 pl-6 py-1.5"
+            placeholder="Search for items"
+            type="text"
+          />
+
+          <div class="absolute top-2 left-1">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.583 19.25L15.233 14.9M9.58301 4.25C12.3444 4.25 14.583 6.48858 14.583 9.25M17.583 9.25C17.583 13.6683 14.0013 17.25 9.58301 17.25C5.16473 17.25 1.58301 13.6683 1.58301 9.25C1.58301 4.83172 5.16473 1.25 9.58301 1.25C14.0013 1.25 17.583 4.83172 17.583 9.25Z"
+                stroke="#202020"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button class="p-2 rounded-md hover:bg-gray-500 duration-300">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 20.25C5.33579 17.7726 8.50702 16.25 12 16.25C15.493 16.25 18.6642 17.7726 21 20.25M16.5 7.75C16.5 10.2353 14.4853 12.25 12 12.25C9.51472 12.25 7.5 10.2353 7.5 7.75C7.5 5.26472 9.51472 3.25 12 3.25C14.4853 3.25 16.5 5.26472 16.5 7.75Z"
+              stroke="#EDEDED"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button class="p-2 rounded-md hover:bg-gray-500 duration-300">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.9932 5.38581C9.9938 3.0484 6.65975 2.41964 4.15469 4.56001C1.64964 6.70038 1.29697 10.279 3.2642 12.8104C4.89982 14.9151 9.84977 19.3541 11.4721 20.7908C11.6536 20.9516 11.7444 21.0319 11.8502 21.0635C11.9426 21.0911 12.0437 21.0911 12.1361 21.0635C12.2419 21.0319 12.3327 20.9516 12.5142 20.7908C14.1365 19.3541 19.0865 14.9151 20.7221 12.8104C22.6893 10.279 22.3797 6.67787 19.8316 4.56001C17.2835 2.44216 13.9925 3.0484 11.9932 5.38581Z"
+              stroke="#EDEDED"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button class="p-2 rounded-md hover:bg-gray-500 duration-300">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.52 2.89L3.96 4.97C3.65102 5.38198 3.49652 5.58797 3.50011 5.76039C3.50323 5.91044 3.57358 6.05115 3.69175 6.14368C3.82754 6.25 4.08503 6.25 4.6 6.25H19.4C19.915 6.25 20.1725 6.25 20.3083 6.14368C20.4264 6.05115 20.4968 5.91044 20.4999 5.76039C20.5035 5.58797 20.349 5.38198 20.04 4.97L18.48 2.89M5.52 2.89C5.696 2.65533 5.784 2.538 5.89552 2.45338C5.9943 2.37842 6.10616 2.3225 6.22539 2.28845C6.36 2.25 6.50667 2.25 6.8 2.25H17.2C17.4933 2.25 17.64 2.25 17.7746 2.28845C17.8938 2.3225 18.0057 2.37842 18.1045 2.45338C18.216 2.538 18.304 2.65533 18.48 2.89M5.52 2.89L3.64 5.39666C3.40254 5.71328 3.28381 5.87159 3.1995 6.04592C3.12469 6.20062 3.07012 6.36431 3.03715 6.53296C3 6.72301 3 6.9209 3 7.31666L3 19.05C3 20.1701 3 20.7302 3.21799 21.158C3.40973 21.5343 3.71569 21.8403 4.09202 22.032C4.51984 22.25 5.07989 22.25 6.2 22.25L17.8 22.25C18.9201 22.25 19.4802 22.25 19.908 22.032C20.2843 21.8403 20.5903 21.5343 20.782 21.158C21 20.7302 21 20.1701 21 19.05V7.31667C21 6.9209 21 6.72301 20.9628 6.53296C20.9299 6.36431 20.8753 6.20062 20.8005 6.04592C20.7162 5.87159 20.5975 5.71328 20.36 5.39667L18.48 2.89M16 10.25C16 11.3109 15.5786 12.3283 14.8284 13.0784C14.0783 13.8286 13.0609 14.25 12 14.25C10.9391 14.25 9.92172 13.8286 9.17157 13.0784C8.42143 12.3283 8 11.3109 8 10.25"
+              stroke="#EDEDED"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <section
+      class="bg-[#EAEAEA] w-full lg:min-h-screen flex items-end justify-between bg-[url(../images/vector.png)] bg-no-repeat bg-right"
+    >
+      <div class="xl:p-20 lg:p-16 md:p-12 p-6 py-20 w-full lg:w-[40%]">
+        <h1
+          class="xl:text-[70px] lg:text-[45px] md:text-3xl text-2xl font-medium tracking-wide lg:leading-tight text-secondary/90"
+        >
+          Up to 50% off training wear
+        </h1>
+        <p class="text-m my-4 text-secondary/90">
+          Automatically applied at checkout. Offer ends on Friday 1st November,
+          2024
+        </p>
+
+        <div>
+          <button class="bg-primary text-white px-6 py-2">Shop now</button>
+        </div>
+      </div>
+
+      <div class="w-[60%] h-full hidden lg:flex items-end justify-end">
+        <img
+          src="../images/girl.png"
+          alt=""
+          class="w-full h-full object-cover object-bottom"
+        />
+      </div>
+    </section>
+
+    <section class="flex flex-col lg:p-10 md:p-6 p-4 w-full">
+      <div
+        class="flex lg:px-10 md:px-6 px-4 text-2xl font-semibold text-gray-800"
+      >
+        <h2 class="font-sans">SHOP BY CATEGORY</h2>
+      </div>
+
+      <div
+        class="lg:p-10 md:p-6 p-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10"
+      >
+        <div class="w-full">
+          <img src="../images/Foot on ball.png" alt="" class="w-full" />
+          <p class="py-5 text-4xl font-semibold text-gray-700">MALE</p>
+        </div>
+        <div class="w-full">
+          <img src="../images/ball in arm.png" alt="" class="w-full" />
+          <p class="py-5 text-4xl font-semibold text-gray-700">FEMALE</p>
+        </div>
+        <div class="w-full">
+          <img src="../images/sitting on ball.png" alt="" class="w-full" />
+          <p class="py-5 text-4xl font-semibold text-gray-700">KIDS</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full">
+      <div class="font-sans">
+        <h2
+          class="lg:px-20 md:px-10 px-5 text-3xl font-medium text-gray-700 lg:mb-10 md:mb-6 mb-4"
+        >
+          SHOP BY CATEGORY
+        </h2>
+      </div>
+
+      <div
+        class="grid lg:grid-cols-4 grid-cols-2 lg:px-20 md:px-10 px-5 pb-10 gap-6"
+      >
+        <div class="w-full">
+          <img src="../images/blue jersey.png" alt="" class="w-full" />
+          <h4 class="py-5 font-medium text-2xl">₦112,420</h4>
+          <p class="text-gray-500 leading-tight">
+            Paris Saint-Germain 2024/25 Stadium Home
+          </p>
+        </div>
+
+        <div class="w-full">
+          <img src="../images/green jersey.png" alt="" class="w-full" />
+          <h4 class="py-5 font-medium text-2xl">₦112,420</h4>
+          <p class="text-gray-500 leading-tight">
+            Paris Saint-Germain 2024/25 Stadium Home
+          </p>
+        </div>
+
+        <div class="w-full">
+          <img src="../images/brown jersey.png" alt="" class="w-full" />
+          <h4 class="py-5 font-medium text-2xl">₦112,420</h4>
+          <p class="text-gray-500 leading-tight">
+            Paris Saint-Germain 2024/25 Stadium Home
+          </p>
+        </div>
+
+        <div class="w-full">
+          <img src="../images/white jersey.png" alt="" class="w-full" />
+          <h4 class="py-5 font-semibold text-2xl">₦112,420</h4>
+          <p class="text-gray-500 leading-tight">
+            Paris Saint-Germain 2024/25 Stadium Home
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full bg-slate-200">
+      <div
+        class="flex flex-wrap items-center lg:justify-between lg:py-10 md:py-6 py-4 lg:px-20 md:px-10 px-5 gap-4"
+      >
+        <div>
+          <img class="w-32 h-8" src="../images/logo 1.png" alt="" />
+        </div>
+
+        <div>
+          <img class="w-30 h-8" src="../images/logo 2.png" alt="" />
+        </div>
+
+        <div>
+          <img class="w-30 h-8" src="../images/logo 3.png" alt="" />
+        </div>
+
+        <div>
+          <img class="w-32 h-8" src="../images/logo 4.png" alt="" />
+        </div>
+
+        <div>
+          <img class="w-30 h-8" src="../images/logo 5.png" alt="" />
+        </div>
+
+        <div>
+          <img class="w-32 h-8" src="../images/logo 6.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full bg-secondary">
+      <div
+        class="lg:p-20 md:p-10 p-5 lg:pl-44 flex lg:items-center lg:justify-between"
+      >
+        <div class="flex lg:flex-row flex-col lg:items-center items-start">
+          <div class="lg:border-r-2 border-0 lg:pr-11">
+            <img src="../images/logo.png" alt="" />
+          </div>
+
+          <div class="text-white lg:pl-8 mt-2">
+            <div class="flex items-center gap-x-3">
+              <i class="fa-solid fa-location-dot"></i>
+              <p
+                class="font-bebas lg:text-xl md:text-sm lg:tracking-wide font-light"
+              >
+                118B, Association Drive, Dolphin Estate, Ikoyi Lagos, Nigeira
+              </p>
+            </div>
+
+            <div class="flex items-center gap-x-3">
+              <i class="fa-solid fa-envelope"></i>
+              <p
+                class="font-bebas lg:text-xl md:text-sm lg:tracking-wide font-light"
+              >
+                contact@lagosliga.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-white flex lg:gap-5 gap-2">
+          <div>
+            <i class="fa-brands fa-instagram lg:text-2xl text-xl"></i>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-x lg:text-2xl text-xl"></i>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-youtube lg:text-2xl text-xl"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
